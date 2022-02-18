@@ -1,15 +1,67 @@
-var myAge = 12
-// let var 차이도 있지만 var로 한다 해도 값만 바뀌지 타입을 바꿀 수는 없다.
-var myName: String = "MinHang"
-
-func getMilk (bottles: Int){
-    var cost = bottles * 2
-    print("cost is \(cost)")
+//Don't change this code:
+func calculator() {
+  let a = 3 //example first input
+  let b = 4 //example second input
+  
+  add(n1: a, n2: b)
+  subtract(n1: a, n2: b)
+  multiply(n1: a, n2: b)
+  divide(n1: a, n2: b)
+  
 }
 
-func greeting2 (whoToGreet: String){
-    print("Hello \(whoToGreet)")
+//Write your code below this line to make the above function calls work.
+func add(n1: Int, n2: Int){
+  return print(n1+n2)
 }
 
-greeting2(whoToGreet: "Min Hang")
-getMilk(bottles: 3)
+func subtract(n1: Int, n2: Int){
+  return print(n1-n2)
+}
+
+func multiply(n1: Int, n2: Int){
+  return print(n1*n2)
+}
+
+func divide(n1:Int, n2: Int){
+  return print(Double(n1)/Double(n2))
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Don't move or change this code:
+calculator()

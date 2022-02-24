@@ -1,20 +1,9 @@
-func exercise() {
+var player1Username: String? = nil
 
-    //Don't change this
-    var stockTickers: [String: String] = [
-        "APPL" : "Apple Inc",
-        "HOG": "Harley-Davidson Inc",
-        "BOOM": "Dynamic Materials",
-        "HEINY": "Heineken",
-        "BEN": "Franklin Resources Inc"
-    ]
-    
-    //Write your code here.
-    stockTickers["WORK"] = "Slack Technologies Inc"
-    stockTickers["BOOM"] = "DMC Global Inc"
-  
-     //Don't modify this
-    print(stockTickers["WORK"]!)
-    print(stockTickers["BOOM"]!)
+player1Username = "jackbbauerisawesome"
+
+var unwrappedP1Username = player1Username!
+
+if player1Username != nil{
+    print(player1Username!)
 }
- 

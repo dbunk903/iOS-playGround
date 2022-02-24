@@ -1,9 +1,21 @@
-var player1Username: String? = nil
 
-player1Username = "jackbbauerisawesome"
+//Don't change this
+var studentsAndScores = ["Amy": Int(readLine()!)!, "James": Int(readLine()!)!, "Helen": Int(readLine()!)!]
 
-var unwrappedP1Username = player1Username!
-
-if player1Username != nil{
-    print(player1Username!)
+func highestScore(scores: [String: Int]) {
+    let a = studentsAndScores["Amy"]!
+    let b = studentsAndScores["James"]!
+    let c = studentsAndScores["Helen"]!
+    var temp = 0
+    if a > temp{
+        temp = a
+    }
+    if b > temp{
+        temp = b
+    }
+    if c > temp{
+        temp = c
+    }
+    print(temp)
 }
+

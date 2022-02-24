@@ -1,18 +1,20 @@
-func loveCalculator2(){
-    let love = Int.random(in:0...100)
-    switch love {
-    case 80...100:
-        print("80~100")
-    case 60..<80:
-        print("60~79")
-    case ..<60:
-        print("Forever alone.")
-    default:
-        print("Never")
-    }
-    
-}
-loveCalculator2()
-loveCalculator2()
-loveCalculator2()
+func exercise() {
 
+    //Don't change this
+    var stockTickers: [String: String] = [
+        "APPL" : "Apple Inc",
+        "HOG": "Harley-Davidson Inc",
+        "BOOM": "Dynamic Materials",
+        "HEINY": "Heineken",
+        "BEN": "Franklin Resources Inc"
+    ]
+    
+    //Write your code here.
+    stockTickers["WORK"] = "Slack Technologies Inc"
+    stockTickers["BOOM"] = "DMC Global Inc"
+  
+     //Don't modify this
+    print(stockTickers["WORK"]!)
+    print(stockTickers["BOOM"]!)
+}
+ 

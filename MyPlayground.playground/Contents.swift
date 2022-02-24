@@ -1,13 +1,12 @@
-func loveCalculator(){
-    let ranNum = Int.random(in:0...100)
-    if ranNum > 80{
-        print("You love each other like Kanye loves Kanye.")
-    } else if ranNum >= 40 && ranNum <= 80{
-        print("You go together like Coke and Mentos.")
-    } else {
-        print("You'll be forever alone.")
+func isLeap(year: Int) {
+  
+  //Write your code inside this function.
+    if (year%4 == 0 && year%100 != 0) || (year%400==0){
+        print("YES")
+    }
+    else{
+        print("NO")
     }
 }
-loveCalculator()
-loveCalculator()
-loveCalculator()
+
+isLeap(year: 2024)

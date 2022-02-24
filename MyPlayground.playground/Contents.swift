@@ -1,12 +1,18 @@
-func isLeap(year: Int) {
-  
-  //Write your code inside this function.
-    if (year%4 == 0 && year%100 != 0) || (year%400==0){
-        print("YES")
+func loveCalculator2(){
+    let love = Int.random(in:0...100)
+    switch love {
+    case 80...100:
+        print("80~100")
+    case 60..<80:
+        print("60~79")
+    case ..<60:
+        print("Forever alone.")
+    default:
+        print("Never")
     }
-    else{
-        print("NO")
-    }
+    
 }
+loveCalculator2()
+loveCalculator2()
+loveCalculator2()
 
-isLeap(year: 2024)

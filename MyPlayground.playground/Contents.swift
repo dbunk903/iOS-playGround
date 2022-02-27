@@ -1,27 +1,21 @@
 
 // Creating Struct
 struct Town {
-    let name = "Tony"
-    var citizens = ["Angela", "Jack Bauer"]
-    var resources = ["Grain": 100, "Ore": 42, "Wool": 75]
+    let name: String
+    var citizens: [String]
+    var resources : [String: Int]
     
-    //change haviour not only containing values
+    init(townName:String, people:[String], stats:[String: Int]) {
+        name = townName
+        citizens = people
+        resources = stats
+    }
     func fortify(){
         print("Defences increased!")
     }
 }
 
-//Initializing a Structure
 
-var  myTown = Town()
-print(myTown.citizens)
-print("\(myTown.name) has \(myTown.resources["Grain"]!) bags of grain.")
-
-// Add and Modify
-myTown.citizens.append("Keanu Reeves")
-print(myTown.citizens)
-
-// func
-myTown.fortify()
-
+var anotherTown = Town(townName: "Nameless Island", people: ["Tom Hanks"], stats: ["Coconuts": 100])
+print(anotherTown.citizens)
 

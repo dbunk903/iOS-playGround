@@ -5,10 +5,10 @@ struct Town {
     var citizens: [String]
     var resources : [String: Int]
     
-    init(townName:String, people:[String], stats:[String: Int]) {
-        name = townName
-        citizens = people
-        resources = stats
+    init(name:String, citizens:[String], resources:[String: Int]) {
+        self.name = name
+        self.citizens = citizens
+        self.resources = resources
     }
     func fortify(){
         print("Defences increased!")
@@ -16,6 +16,7 @@ struct Town {
 }
 
 
-var anotherTown = Town(townName: "Nameless Island", people: ["Tom Hanks"], stats: ["Coconuts": 100])
+var anotherTown = Town(name: "Nameless Island", citizens: ["Tom Hanks"], resources: ["Coconuts": 100])
 print(anotherTown.citizens)
-
+anotherTown.citizens.append("Wilson")
+print(anotherTown.citizens)

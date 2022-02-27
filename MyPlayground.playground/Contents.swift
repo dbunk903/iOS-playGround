@@ -10,3 +10,8 @@ struct Town {
 
 var  myTown = Town()
 print(myTown.citizens)
+print("\(myTown.name) has \(myTown.resources["Grain"]!) bags of grain.")
+
+// Add and Modify
+myTown.citizens.append("Keanu Reeves")
+print(myTown.citizens)

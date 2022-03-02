@@ -1,24 +1,7 @@
-func greeting1() {
-    print("Hello")
-}
-
-greeting1()
-
-func greeting2(name: String){
-    print("Hello \(name)")
-}
-
-greeting2(name: "Min")
-
-func greeting3(_ name: String) -> Bool{
-    if name == "Min"{
-        print("Hello \(name)")
-        return true
-    } else{
-        print("Who Are You")
+func isOdd(n : Int) -> Bool{
+    if n % 2 == 0{
         return false
+    } else{
+        return true
     }
 }
-var doorShouldOpen = greeting3("Minn")
-print(doorShouldOpen)
-

@@ -1,30 +1,24 @@
-// Define a struct
-struct User {
-    var name: String
-    var email: String?
-    var followers: Int
-    var isActive: Bool
-    
-    func logStatus() {
-        if (isActive) {
-            print("\(name) is working hard")
-        } else {
-            print("\(name) has left earth")
-        }
-    }
+func greeting1() {
+    print("Hello")
 }
 
-// Initialise the struct
-var branson = User(name: "Richard", email: nil, followers: 0, isActive: false)
-branson.logStatus()
+greeting1()
 
+func greeting2(name: String){
+    print("Hello \(name)")
+}
 
-// Diagnostic code - do not change this code
-print("\nDiagnostic code (i.e., Challenge Hint):")
-var musk = User(name: "Elon", email: "elon@tesla.com", followers: 2001, isActive: true)
-musk.logStatus()
-print("Contacting \(musk.name) on \(musk.email!) ...")
-print("\(musk.name) has \(musk.followers) followers")
-// sometime later
-musk.isActive = false
-musk.logStatus()
+greeting2(name: "Min")
+
+func greeting3(_ name: String) -> Bool{
+    if name == "Min"{
+        print("Hello \(name)")
+        return true
+    } else{
+        print("Who Are You")
+        return false
+    }
+}
+var doorShouldOpen = greeting3("Minn")
+print(doorShouldOpen)
+

@@ -1,6 +1,3 @@
-
-let defaultColorName = "Red"
-var userDefinedColor : String?
-userDefinedColor = "green"
-var colorToUse = userDefinedColor ?? defaultColorName
-print(colorToUse)
+for index in 1...5{
+    print("\(index) times 5 is \(index * 5)")
+}

@@ -1,9 +1,6 @@
-let softWrappedQuotation = """
-The White Rabbit put on his spectacles.  "Where shall I begin, \
-please your Majesty?" he asked.
-
-"Begin at the beginning," the King said gravely, "and go on \
-till you come to the end; then stop."
-"""
-
-print(softWrappedQuotation)
+let wiseWords = "\"Imagination is more important than knowledge\" - Einstein"
+// "Imagination is more important than knowlege" - Einstein
+let dollaSign = "\u{24}"            // $, 유니코트 U+0024
+let blackHeart = "\u{2665}"         // ♥, 유니코드 U+2665
+let sparklingHeart = "\u{1F496}" // 💖,유니코드 U+1F496
+print(wiseWords)

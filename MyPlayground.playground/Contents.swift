@@ -1,14 +1,9 @@
-let allowedEntry = false
-if !allowedEntry{
-    print("ACCESS DENIED")
-}
+let softWrappedQuotation = """
+The White Rabbit put on his spectacles.  "Where shall I begin, \
+please your Majesty?" he asked.
 
-let enteredDoorCode = true
-let passedRetinaScan = false
-if enteredDoorCode && passedRetinaScan {
-    print("Welcome!")
-} else{
-    print("ACCESS DENIED")
-}
+"Begin at the beginning," the King said gravely, "and go on \
+till you come to the end; then stop."
+"""
 
-
+print(softWrappedQuotation)
